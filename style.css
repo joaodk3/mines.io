@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+
+/*-------------------------- GENERAL RULES -------------------------*/
+h1 {
+    font-family: 'Silkscreen', cursive;
+    color: rgb(20, 46, 31); 
+    font-size: 55px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 5vh;
+
+}
+
+body {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+p {
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    color:rgb(255, 255, 255)
+} 
+
+/* ----------------------------- SIDE BOARD ------------------------- */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.body-content {
+    width: 75%;
+    min-width: 50%;
+    min-height: 750px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    margin-left: 10%;
+}
+
+.sideboard {
+    width: 25%;
+    background-color: rgb(20, 46, 31);
+} 
+
+#auto {
+    display: none;
+}
+
+
+label {
+    color: white;
+}
+
+.toggle {
+    border: 2px solid lightgray;
+    border-radius: 5px 5px; 
+    width: 80%;
+    margin-left: 9%;
+    padding: 2% 0;
+    margin-top: 1vh;
+}
+
+.mines {
+    margin-top: 5%;
+    border: 2px solid lightgray;
+    border-radius: 5px 5px; 
+    width: 80%;
+    margin-left: 9%;
+    padding: 5% 0;
+}
+
+.play-button {
+    margin-top: 3vh;
+}
+
+#play {
+    padding: 4% 20%;  
+    font-family: 'Silkscreen', cursive;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+#play:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#play:active {
+    font-size: 80%;
+    color:#ccc; 
+    font-weight: bold;
+    background-color: rgb(31, 70, 47);
+}
+
+#reset {
+    margin-top: 10%;
+    padding: 4% 20%;  
+    font-family: 'Silkscreen', cursive;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 100%;
+    box-shadow: 1px 1px rgb(10, 9, 9);
+    background-color: rgb(23, 73, 48);
+    color:rgb(255, 255, 255); 
+}
+
+#reset:hover {
+    font-size: 90%;
+    cursor: pointer;
+}
+
+#reset:active {
+    color: black;
+    font-size: 80%;
+}
+
+/* -------------------------- BOMBS and RIGHTS INTERACTIVITY -------------------------- */
+
+i {
+    font-size: 50px;
+    color: rgb(10, 10, 10);  
+    display: none;
+}
+
+#bomb1, #bomb2, #bomb3, #bomb4, #bomb5, #bomb6, #bomb7, #bomb8, #bomb9, #bomb10, #bomb11, #bomb12, #bomb13, #bomb14, #bomb15, #bomb16, #bomb17, #bomb18, #bomb19, #bomb20, #bomb21, #bomb22, #bomb23, #bomb24, #bomb25 {
+    display: none;
+}
+
+#gem1, #gem2, #gem3, #gem4, #gem5, #gem6, #gem7, #gem8, #gem9, #gem10, #gem11, #gem12, #gem13, #gem14, #gem15, #gem16, #gem17, #gem18, #gem19, #gem20, #gem21, #gem22, #gem23, #gem24, #gem25 {
+    display: none;
+}
+
+/* --------------------------- GAME BOARD -------------------------- */
+.gameboard {
+    width: 75%;
+    background-color: lightgrey;
+}
+
+.squares {
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    margin: 3%;
+}
+
+table {
+    width: 95%;
+    height: 100%;
+    max-height: 675px;
+    min-height: 675px;
+    margin-left: 2%;
+
+}
+    
+#square1 , #square2 , #square3, #square4, #square5, #square6, #square7, #square8, #square9, #square10, #square11, #square12, #square13, #square14, #square15, #square16, #square17, #square18, #square19, #square20, #square21, #square22, #square23, #square24, #square25 {
+    border: 3px solid grey;
+    box-shadow: 2px 2px solid grey;
+    border-radius: 10px;
+    margin: 0;
+    padding: 35%;
+   
+
+}
+
+#square1:hover , #square2:hover , #square3:hover, #square4:hover, #square5:hover, #square6:hover, #square7:hover, #square8:hover, #square9:hover, #square10:hover, #square11:hover, #square12:hover, #square13:hover, #square14:hover, #square15:hover, #square16:hover, #square17:hover, #square18:hover, #square19:hover, #square20:hover, #square21:hover, #square22:hover, #square23:hover, #square24:hover, #square25:hover {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(20, 46, 31);
+    cursor: pointer;
+    -moz-box-shadow:    inset 0 0 10px #ffffff;
+    -webkit-box-shadow: inset 0 0 10px #ffffff;
+    box-shadow:         inset 0 0 10px #ffffff;
+}
+

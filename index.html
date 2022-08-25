@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Mine - Project Simulator </title>
+        <link rel = "stylesheet" type="text/css" href = "style.css">
+    </head>
+    <body>
+        <script href = "script.js"> </script> 
+
+        <h1 id ="game-title">Mine Simulator</h1>
+            <div class = "body-content">
+                <div class = "sideboard">
+                    
+                    <div class = "toggle"> 
+                        <p id ="manual">Manual</p> 
+                        <p id = "auto"> Auto </p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class ="mines"> 
+                        <form class = "mines-value"> 
+                            <p><label for = "value"> Select the amount of Mines </label></p>
+                            <select id ="value" name ="value">
+                                <option value = "1">1</option>
+                                <option value = "2">2</option>
+                                <option value = "3">3</option>
+                                <option value = "4">4</option>
+                                <option value = "5">5</option>
+                                <option value = "6">6</option>
+                                <option value = "7">7</option>
+                                <option value = "8">8</option>
+                                <option value = "9">9</option>
+                                <option value = "10">10</option>
+                                <option value = "11">11</option>
+                                <option value = "12">12</option>
+                                <option value = "13">13</option>
+                                <option value = "14">14</option>
+                                <option value = "15">15</option>
+                                <option value = "16">16</option>
+                                <option value = "17">17</option>
+                                <option value = "18">18</option>
+                                <option value = "19">19</option>
+                                <option value = "20">20</option>
+                                <option value = "21">21</option>
+                                <option value = "22">22</option>
+                                <option value = "23">23</option>
+                                <option value = "24">24</option>
+                            </select>
+                            <div class = "play-button">
+                                <input type ="submit" value ="Play" id ="play">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class = "reset-button"> 
+                        <button id ="reset"> Reset </button>
+                    </div>
+
+                </div> 
+                <div class = "gameboard">
+                    <div class ="squares">
+                        <div class = "table">
+                            <table> 
+                                <tr>
+                                    <td><button id ="square1"><i class="fa-solid fa-bomb" id = "bomb1"></i><i class="fa-solid fa-gem" id ="gem1"></i><i class="fa-solid fa-question" id = "qm1"></i></button></td>
+                                    <td><button id ="square2"><i class="fa-solid fa-bomb" id = "bomb2"></i><i class="fa-solid fa-gem" id ="gem2"></i><i class="fa-solid fa-question" id = "qm2"></i></button></td>
+                                    <td><button id ="square3"><i class="fa-solid fa-bomb" id = "bomb3"></i><i class="fa-solid fa-gem" id ="gem3"></i><i class="fa-solid fa-question" id = "qm3"></i></button></td>
+                                    <td><button id ="square4"><i class="fa-solid fa-bomb" id = "bomb4"></i><i class="fa-solid fa-gem" id ="gem4"></i><i class="fa-solid fa-question" id = "qm4"></i></button></td>
+                                    <td><button id ="square5"><i class="fa-solid fa-bomb" id = "bomb5"></i><i class="fa-solid fa-gem" id ="gem5"></i><i class="fa-solid fa-question" id = "qm5"></i></button></td>
+                                </tr>
+                                <tr> 
+                                    <td><button id ="square6"><i class="fa-solid fa-bomb" id = "bomb6"></i><i class="fa-solid fa-gem" id ="gem6"></i><i class="fa-solid fa-question" id = "qm6"></i></button></td>
+                                    <td><button id ="square7"><i class="fa-solid fa-bomb" id = "bomb7"></i><i class="fa-solid fa-gem" id ="gem7"></i><i class="fa-solid fa-question" id = "qm7"></i></button></td>
+                                    <td><button id ="square8"><i class="fa-solid fa-bomb" id = "bomb8"></i><i class="fa-solid fa-gem" id ="gem8"></i><i class="fa-solid fa-question" id = "qm8"></i></button></td>
+                                    <td><button id ="square9"><i class="fa-solid fa-bomb" id = "bomb9"></i><i class="fa-solid fa-gem" id ="gem9"></i><i class="fa-solid fa-question" id = "qm9"></i></button></td>
+                                    <td><button id ="square10"><i class="fa-solid fa-bomb" id = "bomb10"></i><i class="fa-solid fa-gem" id ="gem10"></i><i class="fa-solid fa-question" id = "qm10"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button id ="square11"><i class="fa-solid fa-bomb" id = "bomb11"></i><i class="fa-solid fa-gem" id ="gem11"></i><i class="fa-solid fa-question" id = "qm11"></i></button></td>
+                                    <td><button id ="square12"><i class="fa-solid fa-bomb" id = "bomb12"></i><i class="fa-solid fa-gem" id ="gem12"></i><i class="fa-solid fa-question" id = "qm12"></i></button></td>
+                                    <td><button id ="square13"><i class="fa-solid fa-bomb" id = "bomb13"></i><i class="fa-solid fa-gem" id ="gem13"></i><i class="fa-solid fa-question" id = "qm13"></i></button></td>
+                                    <td><button id ="square14"><i class="fa-solid fa-bomb" id = "bomb14"></i><i class="fa-solid fa-gem" id ="gem14"></i><i class="fa-solid fa-question" id = "qm14"></i></button></td>
+                                    <td><button id ="square15"><i class="fa-solid fa-bomb" id = "bomb15"></i><i class="fa-solid fa-gem" id ="gem15"></i><i class="fa-solid fa-question" id = "qm15"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button id ="square16"><i class="fa-solid fa-bomb" id = "bomb16"></i><i class="fa-solid fa-gem" id ="gem16"></i><i class="fa-solid fa-question" id = "qm16"></i></button></td>
+                                    <td><button id ="square17"><i class="fa-solid fa-bomb" id = "bomb17"></i><i class="fa-solid fa-gem" id ="gem17"></i><i class="fa-solid fa-question" id = "qm17"></i></button></td>
+                                    <td><button id ="square18"><i class="fa-solid fa-bomb" id = "bomb18"></i><i class="fa-solid fa-gem" id ="gem18"></i><i class="fa-solid fa-question" id = "qm18"></i></button></td>
+                                    <td><button id ="square19"><i class="fa-solid fa-bomb" id = "bomb19"></i><i class="fa-solid fa-gem" id ="gem19"></i><i class="fa-solid fa-question" id = "qm19"></i></button></td>
+                                    <td><button id ="square20"><i class="fa-solid fa-bomb" id = "bomb20"></i><i class="fa-solid fa-gem" id ="gem20"></i><i class="fa-solid fa-question" id = "qm20"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button id ="square21"><i class="fa-solid fa-bomb" id = "bomb21"></i><i class="fa-solid fa-gem" id ="gem21"></i><i class="fa-solid fa-question" id = "qm21"></i></button></td>
+                                    <td><button id ="square22"><i class="fa-solid fa-bomb" id = "bomb22"></i><i class="fa-solid fa-gem" id ="gem22"></i><i class="fa-solid fa-question" id = "qm22"></i></button></td>
+                                    <td><button id ="square23"><i class="fa-solid fa-bomb" id = "bomb23"></i><i class="fa-solid fa-gem" id ="gem23"></i><i class="fa-solid fa-question" id = "qm23"></i></button></td>
+                                    <td><button id ="square24"><i class="fa-solid fa-bomb" id = "bomb24"></i><i class="fa-solid fa-gem" id ="gem24"></i><i class="fa-solid fa-question" id = "qm24"></i></button></td>
+                                    <td><button id ="square25"><i class="fa-solid fa-bomb" id = "bomb25"></i><i class="fa-solid fa-gem" id ="gem25"></i><i class="fa-solid fa-question" id = "qm25"></i></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+    <script src = "script.js"></script>
+    <script src="https://kit.fontawesome.com/12939d476d.js" crossorigin="anonymous"></script>
+</html>
